@@ -1,0 +1,704 @@
+/* RESETEO */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Monsterrat, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+
+                        /* ESTILOS GENERALES */
+.listNoViñeta{
+    list-style-type: none;
+}
+.btxt{
+    color: black;
+}
+.wtxt{
+    color: white;
+}
+i{ 
+font-size: 24px; 
+}
+
+
+
+                        /* ESTILOS INDEX */
+
+/* ESTILOS BARRA SUPERIOR */
+ /*nav{
+    width: 100%;
+    height: auto;
+    background-color: #193625; 
+    padding: 16px 0px 8px 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    grid-area: nav;
+}
+.logo img{
+    width: 120px;
+    padding-left: 16px;
+}
+
+/* estilos Menu */
+
+
+        /* Index con BS
+.nav a{
+    color: white;
+    text-decoration: none;
+}
+.dropdown-menu{
+    background-color: #193625;
+}
+
+.burgerIcon{
+    width: 25px;
+    height: 25px;
+}
+.menuContainer li{
+    list-style-type: none;
+    padding: 16px;
+}  
+        Resto sin bs
+.menuContainer li{
+    list-style-type: none;
+    padding: 16px;
+}  
+
+.menuContainer a{
+    color: white;
+    text-decoration: none;
+}
+.menuDesktop{
+    display: none;
+}
+.menuBurger{
+    display: block;
+}
+.burgerIcon{
+    width: 25px;
+    height: 25px;
+}
+.submenuBurger{
+    display: none;
+    background-color:#193625;
+    position: relative;
+}
+.menuBurger li:hover .submenuBurger{
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 50vw;
+    height: 100vh;
+    z-index: 5;
+    text-align: center;
+} */
+
+/* estilos HEADER */
+
+.carousel-item{ 
+    position: relative;
+}
+.carousel-caption{
+    position: absolute;
+    top: 40%; 
+}
+
+.carousel-caption h1{
+    color: #193625;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 32px;
+    text-shadow: 2px 2px 2px white;
+    z-index: 7;
+
+} 
+.callToAction{
+    background-color:  #579022 ;
+    color: black;
+    padding: 10px;
+    border: solid black 2px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: transform 1s;
+}
+.callToAction:hover{
+    transform: scale(1.1);
+    background-color: #87bd13;
+}
+
+/* estilos RESERVA SECTION */
+.sectionReserva{
+    margin: 32px auto;
+    padding: 24px 0px;
+    border: #579022 2px solid;
+    grid-area: reserva;
+    display: block;
+    clear: both;
+}
+
+.sectionReserva form{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sectionReserva input, .sectionReserva label{
+    font-size: large;
+}
+.sectionReserva div{ 
+    margin-bottom: 8px;
+}
+
+
+/* estilos SECTION CAJAS */
+
+.titleBox{
+    width: 100%;
+    padding: 1.5rem 0px;
+    background-image: linear-gradient(to bottom, #579022,  #87bd13); 
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.sectionCajas{
+    margin: 0;
+    grid-area: cajas;
+}
+.tarjetas{
+    padding-bottom: 16px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+.borde{
+    border: #193625 solid 2px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.boxColumn{
+    width: 250px;
+    margin-top: 16px;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    line-height: 1.5rem;
+}
+
+.boxColumn h3{
+    background-color: #193625;
+    color: white;
+    padding: 8px;
+}
+
+/* estilos GALERIA DE IMAGENES */
+.galeriaSection{
+    grid-area: galeria;
+}
+.galeriaIndex{
+    margin-bottom: 16px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+}
+.galeriaIndex img{
+    min-width: 40%;
+    flex-basis: 10%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    transition: all 1s;
+}
+.galeriaIndex img:hover{
+    transform: scale(1.1, 1.1);
+    z-index: 3;
+}
+.videoIndex video{
+    width: 100%;
+    margin: 16px 0px;
+}
+
+/* estilos TESTIMONIOS */
+.opiniones{
+    background-color: rgb(139, 243, 136);
+    margin-bottom: 0;
+    font-style: italic;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+.opinion2, .opinion3{
+    display: none;
+}
+
+/* estilos TESTIMONIOS */
+
+.maps{
+    align-content: center;
+    margin-top: 0;
+}
+
+/* estilos FOOTER 
+footer{
+    background-color: #bfc0c0;
+    margin: 0;
+    grid-area: footer;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 24px;
+}
+footer img{
+    width: 30px;
+    height: auto;
+}
+.contacto{
+    width: 100%;
+    margin: 8px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.redes{
+    width: 100%;
+    padding: 8pxpx;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    padding-right: 8px;
+}
+footer form{ 
+    width: 100%;
+    margin: 8px;
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+} */
+
+                        /*estilos de pagina CABAÑAS*/
+
+/* estilos GRID CABAÑAS                      
+.cabañaBox{
+    border: #193625 2px solid;
+    margin: 24px 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas: 
+    "titulo"
+    "galeria"
+    "descripcion"
+    "equipo"
+    "cartas"
+    "servicios"
+    "lista";
+}
+
+.cabañaBox .cabañaTitle{
+    grid-area: titulo;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #193625 ;
+}
+.cabañaBox .descripcion{
+    grid-area: descripcion;
+    margin: 0px 8px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+.cabañaBox .destacado{
+    grid-area: imagen;
+    width: 100%;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+}
+
+.cabañaBox .principal{
+    grid-area: equipo;
+}
+.cabañaBox .secundario{
+    grid-area: servicios;
+}
+.cabañaBox .subtitle{
+    margin: 8px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    justify-self: center;
+    align-self: flex-end;
+    color: #193625 ;
+}
+.subtitle h4{
+    border-bottom: #193625 solid 2px;
+}
+
+.cabañaBox .cartas{
+    grid-area: cartas;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+.circulo{
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    align-self: center;
+}
+.iconoHab{
+    background-image: url(../media/iconohabitacion.png);
+}
+.iconoPers{
+    background-image: url(../media/iconopersonas.png);
+}
+.iconoCama{
+    background-image: url(../media/iconocama.png);
+}
+
+.cabañaBox .lista{
+    grid-area: lista;
+    align-self: center;
+    justify-self: center;
+}
+.cabañaBox .carrusel{
+    grid-area: galeria;
+    } */
+   
+
+
+                        /*estilos de PAGINA NOSOTROS*/
+.nosotros{
+    width: 1000px;
+    margin: 54px;
+    padding: 22px;
+    text-align: justify;
+}
+.nosotros p{
+    line-height: 32px;
+}
+.subtitulo{
+    text-align: center;
+    color: #193625 ;
+    text-decoration: underline #193625 3px;
+}
+
+/*estilos de LISTA DE SERVICIOS*/
+.serviciosList{
+    margin: 50px;
+
+}
+.serviciosList li{
+    display: flex; 
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-content: space-between;
+    margin: 22px 44px;
+    text-align: center;     
+}
+.circuloSmall{
+    width: 30px;
+    height: 30px; 
+    margin-right: 8px;   
+    }
+
+
+/*estilos de GALERIA DE IMAGENES
+
+.galeriaImagenes{
+    margin:5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;   
+}
+.imgGalery{
+    width: 350px;
+    min-height: 270px;
+    margin-top: 4px;
+    margin-right: 4px;
+    flex-basis: px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    transition: transform 1s;
+}
+.imgGalery:hover{
+    transform: scale(1.1, 1.1);
+    z-index: 3;
+}
+
+.galeriaImagenes video{
+    flex-grow: 2;
+    width: 500px;
+    height: auto;
+}
+*/
+
+
+                        /*estilos PAGINA BLOG*/
+.iconMini{
+    width: 20px;
+    height: 20px;
+}
+
+
+.barraLateral{
+    background-color: gray;
+    padding: 16px;
+}
+.blogSection{
+    padding-top: 16px;
+}
+.postDestacado{
+    order: -1;
+}
+.postBlog{
+    max-width: 350px;
+    margin-bottom: 16px;
+    border: black 1px solid;
+    overflow: hidden;
+}
+.postBlog img{
+    width: 100%;
+    height: 200px;
+}
+.postBlog p{
+    text-align: justify;
+    line-height: 30px;
+    padding: 10px;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 2px;
+}
+.postBlog h2{
+    font-size: 24px;
+    font-weight: 500;
+
+    margin: 8px auto;
+    text-align: center;
+}
+.postBlog button{
+    border: black solid 2px;
+    font-weight: 400;
+    background-color: #3DA35D;
+    padding: 2px;
+    margin: 8px auto;
+    font-size: 16px;
+}
+.badge{
+    font-size: 0.8rem;
+}
+
+                        /*estilos de pagina RESERVA
+#reserva{ 
+    min-height: 60vh;
+}
+
+/*estilos formularios
+.formCenter{
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+.formCenter input{
+    padding: 10px 10px 0;
+    margin-bottom: 15px;
+}
+.formCenter .callToAction{
+    margin: 15px;
+}
+.formCenter fieldset{
+    margin:  20px 25%;
+} */
+
+
+
+/*                      MEDIA QUERY TABLET               */
+
+@media only screen and (min-width: 480px) {
+
+    /*HOME*/  
+
+
+                /*opiniones
+    .flexPadre{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: stretch;
+        align-content: stretch;
+    } */ 
+    .opiniones{
+        width: 50%;
+        padding: 8px;
+        overflow: hidden;
+    }
+    .mapas{
+        width: 100%;
+    }
+
+    /*footer
+    footer{ 
+        flex-direction: column wrap;
+    }
+
+    PAGINA CABAÑAS
+    .cabañaBox{
+        grid-template-columns: 5fr 5fr;
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: 
+        "titulo titulo"
+        "descripcion imagen"
+        "equipo equipo"
+        "cartas cartas"
+        "galeria servicios"
+        "galeria lista"
+    } */
+
+
+}
+
+
+
+
+/*                     MEDIA QUERY DESKTOP             */   
+@media only screen and (min-width: 768px) {
+
+    /*HOME*/ 
+
+                /*Titulo*/
+    .headerIndex{
+        z-index: -1;
+    }
+
+    .sectionReserva{
+        background-color: rgb(0, 0, 0, 0.5);
+    }
+                /*Menu*/ 
+
+    .menuBurger{
+        display: none;
+    }
+    .menuDesktop{
+        display: block;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .menuDesktop li{
+        padding-right: 32px;
+    }
+    .submenu{
+        display: none;
+        background-color: #193625;
+        position: relative;
+    }
+    .menuDesktop li:hover .submenu{
+        display: block;
+        position: absolute;
+        z-index: 5;
+    }
+
+
+                /*Galeria
+     .galeriaIndex img{
+        min-width: 350px;
+    }
+    .videoIndex{
+        width: 50%;
+        margin: auto
+    }*/
+                /*Opiniones*/
+    .flexPadre{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: stretch;
+        align-content: stretch;
+        }
+    .opiniones{
+        width: 50%;
+        overflow: hidden;
+        justify-content: space-around;
+    }
+    .opinion2{
+        display: block;
+    }
+
+                /*Footer
+    footer{
+        flex-flow: row nowrap;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+    .contacto, .redes, footer form{
+        width: auto;
+    }
+    .contacto{
+        align-items: flex-start;
+    } */
+
+
+
+
+/*PAGINA CABAÑAS*/
+    .cabañaBox{
+        margin-right: 5%;
+        margin-left: 5%;
+        /*grid-template-columns: 2fr 3fr 3fr 2fr;
+        grid-template-rows: repeat(7, auto);
+    }
+    .cabañaBox.right {
+        grid-template-areas: 
+        "titulo titulo titulo titulo"
+        "descripcion descripcion imagen imagen"
+        "equipo equipo imagen imagen"
+        "cartas cartas cartas cartas"
+        "galeria galeria galeria servicios"
+        "galeria galeria galeria lista";
+    }
+    .cabañaBox.left{
+        grid-template-areas: 
+        "titulo titulo titulo titulo"
+        "imagen imagen descripcion descripcion"
+        "imagen imagen equipo equipo"
+        "cartas cartas cartas cartas"
+        "servicios galeria galeria galeria"
+        "lista galeria galeria galeria";
+        grid-template-columns: 2fr 3fr 3fr 2fr;
+    } */
+    .cabañaBox .destacado{
+        width: 80%;
+        height: auto;
+        justify-self: center;
+        align-self: center;
+    }
+    .cabañaBox .carrusel{
+        margin: 0px 32px;
+        text-align: center;
+    }
+    .imgCarrusel{
+        width: 150px;
+        height: 100px;
+        margin-right: 4px;
+        margin-bottom: 4px;
+        border-radius: 8px ;
+    }
+    
+    
+}
+
+
+   
