@@ -1,0 +1,30 @@
+/*colores*/
+$verdeOscuro: #193625;
+$verdeClaro:  #579022;
+$verdeGradient: #87bd13;
+$verdePastel: #a9dca1;
+$gris: #bfc0c0; 
+$txtLight: white;
+$txtDark: black;
+$txtEnfasis: green;
+$boton: #579022;
+
+$sombra: 2px 2px 5px #999;
+
+/*medidas*/
+$estandar: 16px;
+$desktop: 768px;
+$tablet: 480px;
+
+
+$font1: Montserrat;
+$font2: 'Bebas Neue';
+
+
+/*mixin*/
+@mixin size ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+    
+

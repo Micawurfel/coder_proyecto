@@ -1,0 +1,73 @@
+@import "variables";
+
+
+nav{
+    background-color: $verdeOscuro;
+    color: $txtLight; 
+    height: auto;
+    padding: $estandar 0px 8px 0px;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    z-index: 15;
+
+    li{
+        list-style-type: none;
+        padding: 0px $estandar;
+        color: currentColor;
+    }
+
+    .menuContainer ul, .dropdown ul{
+        margin: 0px $estandar*2;
+        background-color: $verdeOscuro;
+    
+    li:hover{
+        background-color: $txtLight;
+        color: $verdeOscuro;
+    }
+    a:hover{
+        background-color: $txtLight;
+        color: $verdeOscuro; 
+    }
+    }
+}
+.logo img{
+    width: 80px;
+    margin-left: $estandar;
+}
+.dropdown{
+    background-color: $verdeOscuro;
+    color: $txtLight;
+    ul{
+        background-color: $verdeOscuro;
+        color: $txtLight;
+    }
+    li{
+        padding: 8px 0px;
+    }
+    a{
+        display: inline-block;
+    }
+}
+.burgerIcon{
+    @include size (24px, 24px);
+    margin-right: $estandar;
+}
+
+
+/* MEDIA QUERY TABLET */
+
+@media only screen and (min-width: $tablet) {}
+
+/* MEDIA QUERY DESKTOP */   
+@media only screen and (min-width: $desktop) {
+    .logo img{
+        width: 120px;
+        margin-left: $estandar*2;
+        transition: scale 0.5s;
+        &:hover{
+            transform: scale(1.1, 1.1);
+        }
+    } 
+}

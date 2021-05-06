@@ -1,0 +1,102 @@
+@import "variables";
+
+
+.flex-row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.flex-row-nw{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.flex-row-rev{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.flex-column{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.flex-column-nw{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.flex-column-rev{
+    display: flex;
+    flex-flow: column-reverse wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+/* index */
+.sectionReserva form{
+    justify-content: space-evenly;
+}
+.boxColumn{
+    justify-content: stretch;
+}
+
+.opiniones{
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* servicios */
+.serviciosList li{
+    display: flex; 
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-content: space-between;
+}
+
+/* blog */
+.postBlog{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* cabañas */
+.mainCabañas{
+    justify-content: center;
+}
+
+.cabañaBox {
+
+    .carta{
+        @extend .flex-column-nw;
+    }
+    .subtitle{
+        align-self: flex-end;
+        justify-self: center;
+    }
+}
+
+                    /* MEDIA QUERY DESKTOP */   
+@media only screen and (min-width: $desktop) {
+    .cabañaBox {
+        .cartasBox{
+           display: flex;
+           flex-flow: row wrap;
+           justify-content: space-around;
+
+        }
+        
+    }
+}

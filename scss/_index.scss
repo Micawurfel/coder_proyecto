@@ -1,0 +1,139 @@
+@import "variables";
+
+
+
+/* estilos HEADER */
+
+.carousel-item{ 
+    position: relative;
+    z-index: 1;
+}
+.carousel-caption{
+    position: absolute;
+    top: 40%; 
+}
+.carousel-caption h1{
+    color: white;
+    font-family: $font2;
+    font-size: 4.5rem;
+    font-weight: 800;
+    margin-bottom: 60px;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    z-index: 7;
+} 
+.boton{
+    background-color:  $boton;
+    border: solid black 2px;
+    color: $txtDark;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+    transition: transform 1s;
+}
+.boton:hover{
+    background-color: #87bd13;
+    transform: scale(1.1);
+}
+
+/* estilos RESERVA SECTION */
+.sectionReserva{
+    box-shadow: $sombra;
+    margin: 0 auto;
+    padding: 24px 0px;
+}
+.sectionReserva input, .sectionReserva label{
+    font-size: medium;
+    margin-bottom: 8px;
+}
+
+
+/* estilos SECTION CAJAS */
+
+.titleBox{
+    background-image: linear-gradient(to bottom, $verdeClaro, $verdeGradient); 
+    color: $txtLight;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 1rem 0px;
+    width: 100%;
+    .titulo{
+        font-family: $font2;
+        font-size: 2.5rem;
+    }
+}
+.tarjetas{
+    margin-bottom: 24px;
+}
+.borde{
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #000;
+}
+
+.boxColumn{
+    line-height: 1.5rem;
+    text-align: center;
+    margin-top: 16px;
+    width: 250px;
+    h3{
+        border-radius: 8px 8px 0 0;
+        font-size: 1.2rem;
+        background-color:$verdeOscuro;
+        color:$txtLight;
+        padding: 8px;
+        margin-bottom: 0;
+    }
+    p{
+        margin: 16px 4px;
+    }
+}
+
+/* estilos TESTIMONIOS */
+.opiniones{
+    font-style: italic;
+    overflow: hidden;
+    width: 100%;
+}
+.opinion2, .opinion3{
+    display: none;
+}
+.mapa{
+    iframe {
+        min-height: 200px;
+        margin-bottom: 0px;
+    }
+}
+
+/* MEDIA QUERY TABLET */
+
+@media only screen and (min-width: $tablet) {
+    .opinion2{
+        display: block;
+    }
+    .mapa{
+        iframe {
+            min-height: 300px;
+        }
+    }
+
+}
+
+/* MEDIA QUERY DESKTOP */   
+@media only screen and (min-width: $desktop) {
+
+    .sectionReserva{
+        background-color: rgba(0, 0, 0, 0.15);
+        border-radius: 8px;
+        margin: 24px auto;
+        padding: 32px 0px;
+        width: 80%;
+        }
+    .opinion3{
+        display: block;
+    }
+    .mapa{
+        iframe {
+            min-height: 400px;
+        }
+    }
+}

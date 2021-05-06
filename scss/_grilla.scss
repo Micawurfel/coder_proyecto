@@ -1,0 +1,93 @@
+@import "variables";
+
+/* estilos GRID BLOG */ 
+.mainBlog{
+    display: grid;
+    grid-template-columns: 8fr;
+    grid-template-rows: auto;
+}
+
+/* estilos GRID CABAÑAS */ 
+.cabañaBox{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas: 
+    "titulo"
+    "galeria"
+    "descripcion"
+    "equipo"
+    "cartas"
+    "servicios"
+    "lista"
+    "link";
+    .cabañaTitle{
+        grid-area: titulo; 
+    }
+    .descripcion{
+        grid-area: descripcion;
+    }
+    .destacado{
+        grid-area: imagen;
+    }
+    .cartasBox{
+        grid-area: cartas;
+    }
+    .principal{
+        grid-area: equipo;
+    }
+    .secundario{
+        grid-area: servicios;
+    }
+    .lista{
+        grid-area: lista;
+    }
+    .carrusel{
+        grid-area: galeria;
+    }
+    .linksCabañas{
+        grid-area: link;
+    }
+}
+
+
+/*  MEDIA QUERY TABLET  */
+
+@media only screen and (min-width: $tablet) {
+    .cabañaBox{
+        grid-template-columns: 4fr 4fr;
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: 
+        "titulo titulo"
+        "imagen imagen"
+        "descripcion descripcion"
+        "equipo servicios"
+        "cartas lista"
+        "galeria link";
+    }
+}
+
+
+/* MEDIA QUERY DESKTOP */   
+@media only screen and (min-width: $desktop) {
+    .mainBlog{
+        grid-template-columns: 8fr 2fr;
+        grid-template-rows: auto;
+        column-gap: 8px;
+    }
+    
+    .cabañaBox{
+        grid-template-columns: 3fr 3fr;
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas: 
+        "titulo titulo"
+        "imagen imagen"
+        "descripcion descripcion"
+        "equipo equipo"
+        "cartas cartas"
+        "servicios servicios"
+        "lista lista"
+        "galeria galeria"
+        "link link";
+    }
+}

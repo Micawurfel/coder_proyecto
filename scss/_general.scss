@@ -1,0 +1,332 @@
+@import "variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $font1, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+a{
+    color: currentColor;
+    text-decoration: none;
+}
+a:hover, a:visited{
+    color: currentColor;
+}
+.listNoViñeta{
+    list-style-type: none;
+}
+i{ font-size: 24px; }
+
+/* error */
+body.error{
+    background-color:$verdeOscuro;
+    color: $txtLight;
+    text-align: center;
+    div{
+        margin: 40px auto;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 200px;
+    }
+    p{
+        line-height: 2.5em;
+    }
+    a{
+        text-decoration: underline;
+    }
+}
+
+/* cabañas */
+.description{
+    padding: 16px 32px; 
+    font-size: 1rem;
+    line-height: 2em;
+    text-align: center;
+}
+.cabañaPortada{
+    @include size (400px, 300px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    margin: 8px;
+    button{
+        background-color: transparent;
+        border: $txtLight 2px solid;
+        color: $txtLight;
+        padding: 16px;
+        margin-top: 120px;
+        a{
+            color: currentColor;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    }
+
+}
+.cabañaBox{
+    text-align: center;
+    margin: 16px 0px;
+    .cabañaTitle{
+        color: $verdeOscuro;
+        text-align: center;
+        h3{
+            font-family: $font2;
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+        
+    }
+    .descripcion{
+        align-self: center;
+        justify-self: center;
+        margin: 0px 8px;
+        text-align: center;
+    }
+    .destacado{
+        align-self: center;
+        justify-self: center;
+        height: auto;
+        width: 100%;
+        display: none;
+    }
+    .subtitle{
+        color: $verdeOscuro;
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin: 8px;
+        position: relative; 
+
+        h4::after, h4::before {
+          content: '';
+          background-color: currentColor;
+          height: 3px;
+          width: 60px;
+          position: absolute;
+          top: 0.5em; 
+        }
+        
+        h4::before {
+          left: -65px; 
+        }
+        
+        h4::after {
+          right: -65px; 
+        }
+    }
+    .cartasBox{
+        width: 100;
+        text-align: center;
+        .circulo{
+            @include size (30px, 30px);
+            background-size: contain;
+            align-self: center;
+        }
+        .iconoHab{
+            background-image: url(../media/iconohabitacion.png);
+        }
+        .iconoPers{
+            background-image: url(../media/iconopersonas.png);
+        }
+        .iconoCama{
+            background-image: url(../media/iconocama.png);
+        }
+    }
+    .lista{
+        align-self: center;
+        justify-self: center;
+    }
+    .linksCabañas{
+        text-align: center;
+        a{
+            color: $verdeOscuro;
+            text-decoration: none;
+        }
+        li:hover{
+            background-color: $verdeOscuro;
+            a{
+                color: $txtLight;
+            }
+        }
+    }
+}
+
+/*estilos de PAGINA NOSOTROS*/
+.nosotros{
+    width: 80%;
+    margin: 32px;;
+    justify-content: space-between;
+    img{
+        @include size (400px, 250px);
+    }
+}
+.servicioSection{
+    h2{
+        text-align: center;
+        color: $verdeOscuro;
+        font-size: 1.5rem;
+        font-weight: 500;
+        position: relative;
+    }
+
+    h2::after, h2::before {
+        content: '';
+        background-color: currentColor;
+        height: 3px;
+        width: 120px;
+        position: absolute;
+        top: 0.5em; 
+        }
+        
+    h2::before {
+        left: -130px; 
+        }
+        
+    h2::after {
+        right: -130px; 
+    }
+}
+
+/*estilos de LISTA DE SERVICIOS*/
+.serviciosList{
+    margin: 50px;
+
+}
+.serviciosList li{
+    margin: 22px 44px;
+    text-align: center;     
+}
+.circuloSmall{
+    width: 30px;
+    height: 30px; 
+    margin-right: 8px;   
+    }
+
+
+
+ /*estilos PAGINA BLOG*/
+ .iconMini{
+    width: 20px;
+    height: 20px;
+}
+
+.barraLateral{
+    background-color: gray;
+    padding: 16px;
+    display: none;
+    
+}
+.blogSection{
+    padding-top: 16px;
+}
+.postDestacado{
+    order: -1;
+}
+.postBlog{
+    max-width: 350px;
+    margin-bottom: 16px;
+    box-shadow: $sombra;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 200px;
+    }
+    p{
+        text-align: justify;
+        line-height: 30px;
+        padding: 10px;
+        height: 200px;
+        overflow: hidden;
+        margin-bottom: 2px;
+    }
+    h2{
+        font-size: 24px;
+        font-weight: 500;
+        margin: 8px auto;
+        text-align: center;
+    }
+    button{
+        border: black solid 2px;
+        font-weight: 400;
+        background-color: #3DA35D;
+        padding: 2px;
+        margin: 8px auto;
+        font-size: 16px;
+    }
+}
+.badge{
+    font-size: 0.8rem;
+}
+
+
+                    /* MEDIA QUERY TABLET */   
+@media only screen and (min-width: $tablet) {
+    .cabañaBox{
+        .destacado{
+            display: block;
+        }
+    }
+
+
+
+}
+
+                    /* MEDIA QUERY DESKTOP */   
+@media only screen and (min-width: $desktop) {
+
+/*PAGINA CABAÑAS*/
+.cabañaPortada{
+    margin: 24px;
+}
+.description{
+    width: 60%;
+    margin: 0px auto;
+    padding-bottom: 0px;
+}
+
+.cabañaBox{
+    margin: 0px auto;
+     width: 65%;
+    .descripcion{
+        margin: 8px 40px;
+        line-height: 2em;
+    }
+
+    .destacado{
+        @include size (70%, 450px);
+
+        justify-self: center;
+        align-self: center;
+    }
+    .carrusel{
+        margin: 0px 32px;
+        text-align: center;
+    }
+    .imgCarrusel{
+        width: 150px;
+        height: 100px;
+        margin-right: 4px;
+        margin-bottom: 4px;
+        border-radius: 8px;
+    }
+    .linksCabañas{
+        width: 30%;
+        margin: auto;
+        text-align: center;
+        li{
+            padding: 8px 0px;
+        }
+    }
+}
+.barraLateral{
+    display: block;
+}
+}
