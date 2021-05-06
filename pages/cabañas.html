@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabañas</title>
+
+    <meta name="keywords" content="cabañas, habitaciones, cocina completa, servicios">
+    <meta name="description" content="En Cabañas de la Selva contamos con 9 cabañas, encontrá la más adecuada para vos">
+
+    <!--CSS----------------------->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!--BOOTRSRAP----------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!--GOOGLE FONTS-------------->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!--Montserrat------------>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,300&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--BARRA SUPERIOR---------------------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg">
+
+        <!--LOGO-->
+        <div class="logo"> 
+            <a href="../index.html" class="navbar-brand">
+                <img src="../media/logo-sin-fondo.png" alt="logo">
+            </a>
+        </div>
+
+        <!--MENU DE NAVEGACION-->
+        <button class="burger navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navIndex" aria-controls="navIndex" aria-expanded="false" aria-label="Toggle navigation">
+            <img class="burgerIcon" src="../media/burger-button.png" alt="">
+        </button>
+
+        <div class="menuContainer nav collapse navbar-collapse" id="navIndex">
+
+            <ul class="nav navbar-nav w-100 justify-content-end">
+                <li class="nav-item"><a href="servicios.html" class="nav-link">Nosotros</a></li>
+                <li class="nav-item"><a href="galeria.html" class="nav-link">Galeria</a></li>
+
+                <li class="nav-item dropdown"> 
+                    <a class="nav-link nav-link-padding" href="cabañas.html">Cabaña</a>
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="cabañas.html"></a>
+                    <!--SUBMENU-->
+                    <ul class="dropdown-menu">
+                        <li><a href="cabaña-familiar.html" class="dropdown-item">Familiar</a></li>
+                        <li><a href="cabaña-matrimonial.html" class="dropdown-item">Matrimonial</a></li>
+                        <li><a href="cabaña-grande.html" class="dropdown-item">Grande</a></li>
+                        <li><a href="cabaña-silenciosa.html" class="dropdown-item">Silenciosa</a></li>
+                        <li><a href="cabaña-tradicional.html" class="dropdown-item">Tradicional</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+            </ul>
+
+    </div>
+        
+    </nav>
+    <!--title-->
+    <div class="titleBox">
+        <h1 class="titulo">Nuestras Cabañas</h1> 
+    </div>
+    
+    <div class="description">
+        <h4>Conoce todas nuestras cabañas y elegi la mas adecuada para vos</h4>
+        <p>En Cabañas de la Selva contamos con 10 cabañas muy amplias y con todas las comodidades. Las cabañas estan distribuidas en un enorme patio. Cada cabaña cuenta con cocina completa, estacionamiento propio y parrilla. Tenemos diferentes opciones de habitaciones según la cantidad de personas. Encontrá la cabaña que mejor se adapte a vos! </p>
+    </div>
+    
+    <main class="mainCabañas flex-row container">
+
+        <div class="cabañaPortada" style="background-image: url(../media/cabaña.jpg);"><button><a href="cabaña-familiar.html"> Cabaña Familiar</a> </button></div>
+        <div class="cabañaPortada" style="background-image: url(../media/cabaña01.JPG);"><button><a href="cabaña-matrimonial.html"> Cabaña Matrimonial</a> </button></div>
+        <div class="cabañaPortada" style="background-image: url(../media/cabaña02.jpg);"><button><a href="cabaña-grande.html"> Cabaña Grande</a> </button></div>
+        <div class="cabañaPortada" style="background-image: url(../media/cabaña03.jpg);"><button><a href="cabaña-silenciosa.html"> Cabaña Silenciosa</a> </button></div>
+        <div class="cabañaPortada" style="background-image: url(../media/cabaña04.JPG);"><button><a href="cabaña-tradicional.html"> Cabaña Tradicional</a> </button></div>
+
+    </main>
+
+    <!--Pie de pagina------------------------------------------------------------------------------------>
+    <footer>
+        <div class="contacto">
+            <a href="https://g.page/delaselva?share"><img src="../media/marcador-de-posicion.png" alt=""> Nuestra Ubicacion</a>
+            <a href="03755 43-0811"><img src="../media/llamada-telefonica.png" alt=""> 03755 43-0811</a>
+            <a href="mailto:info@cabanasdelaselva.com.ar"><img src="../media/email.png" alt=""> info@cabanasdelaselva.com.ar</a>  
+        </div>
+
+        <div class="redes">
+            <a href="https://www.facebook.com/delaselva2013"><img src="../media/facebook.png" alt="icono facebook"></a>
+            <a href="https://www.instagram.com/cabanas_de_la_selva/"><img src="../media/instagram.png" alt="icono instagram"></a>
+            <a href="wa.me/+5493755430811"><img src="../media/whatsapp.png" alt="icono whatsapp"></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+</body>
+</html>
