@@ -28,11 +28,11 @@
     color: $txtDark;
     font-size: 18px;
     font-weight: 500;
-    padding: 10px;
+    padding: 8px;
     transition: transform 1s;
 }
 .boton:hover{
-    background-color: #87bd13;
+    background-color: $boton-hover;
     transform: scale(1.1);
 }
 
@@ -46,6 +46,7 @@
     font-size: medium;
     margin-bottom: 8px;
 }
+
 
 
 /* estilos SECTION CAJAS */

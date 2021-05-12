@@ -12,11 +12,20 @@ footer{
     justify-content: space-between; 
     align-items: center;
     
-    img{
-        @include size (30px, 30px);
+    i{
+        color:$verdeOscuro;
+        font-size: 32px;
     }
-
-
+    i.facebook{
+         &:hover{color: $fb;}
+    }
+    i.instagram{
+        &:hover{color: $ig;}
+    }
+    i.whatsapp{
+        &:hover{color: $wp;}
+    }
+    
     .contacto{
         width: 100%;
         margin: 8px;
@@ -44,7 +53,7 @@ footer{
         }
         &:visited{
             color: black;
-        }
+        }   
     }
     .formulario{ 
         margin: 8px;
@@ -63,6 +72,7 @@ footer{
         margin-bottom: 4px;
     }
 }
+
                     /*  MEDIA QUERY TABLET  */
 
 @media only screen and (min-width: $tablet) {

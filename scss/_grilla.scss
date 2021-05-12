@@ -1,11 +1,5 @@
 @import "variables";
 
-/* estilos GRID BLOG */ 
-.mainBlog{
-    display: grid;
-    grid-template-columns: 8fr;
-    grid-template-rows: auto;
-}
 
 /* estilos GRID CABAÑAS */ 
 .cabañaBox{
@@ -70,11 +64,6 @@
 
 /* MEDIA QUERY DESKTOP */   
 @media only screen and (min-width: $desktop) {
-    .mainBlog{
-        grid-template-columns: 8fr 2fr;
-        grid-template-rows: auto;
-        column-gap: 8px;
-    }
     
     .cabañaBox{
         grid-template-columns: 3fr 3fr;

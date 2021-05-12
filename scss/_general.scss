@@ -77,6 +77,7 @@ body.error{
     margin: 16px 0px;
     .cabañaTitle{
         color: $verdeOscuro;
+        margin-top: 16px;
         text-align: center;
         h3{
             font-family: $font2;
@@ -125,20 +126,10 @@ body.error{
     .cartasBox{
         width: 100;
         text-align: center;
-        .circulo{
-            @include size (30px, 30px);
-            background-size: contain;
-            align-self: center;
+        i{
+            color: $verdeOscuro;
         }
-        .iconoHab{
-            background-image: url(../media/iconohabitacion.png);
-        }
-        .iconoPers{
-            background-image: url(../media/iconopersonas.png);
-        }
-        .iconoCama{
-            background-image: url(../media/iconocama.png);
-        }
+
     }
     .lista{
         align-self: center;
@@ -198,13 +189,15 @@ body.error{
 /*estilos de LISTA DE SERVICIOS*/
 .serviciosList{
     margin: 50px;
-
+    i{
+        margin-right: 4px;
+    }
 }
 .serviciosList li{
     margin: 22px 44px;
     text-align: center;     
 }
-.circuloSmall{
+.i-img{
     width: 30px;
     height: 30px; 
     margin-right: 8px;   
@@ -212,27 +205,18 @@ body.error{
 
 
 
- /*estilos PAGINA BLOG*/
- .iconMini{
-    width: 20px;
-    height: 20px;
-}
 
-.barraLateral{
-    background-color: gray;
-    padding: 16px;
-    display: none;
-    
-}
+ /*estilos PAGINA BLOG*/
 .blogSection{
     padding-top: 16px;
+    margin: 0px 10%;
 }
 .postDestacado{
     order: -1;
 }
 .postBlog{
     max-width: 350px;
-    margin-bottom: 16px;
+    margin: 16px;
     box-shadow: $sombra;
     overflow: hidden;
     img{
@@ -254,12 +238,15 @@ body.error{
         text-align: center;
     }
     button{
-        border: black solid 2px;
-        font-weight: 400;
-        background-color: #3DA35D;
+        border: black solid 1.5px;
+        border-radius: 2px;
+        background-color:transparent;
         padding: 2px;
         margin: 8px auto;
         font-size: 16px;
+        &:hover{
+            background-color:  rgba(0, 0, 1, 0.5);
+        }
     }
 }
 .badge{
