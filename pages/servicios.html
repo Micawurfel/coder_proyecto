@@ -50,7 +50,7 @@
                 <li class="nav-item"><a href="galeria.html" class="nav-link">Galeria</a></li>
 
                 <li class="nav-item dropdown"> 
-                    <a class="nav-link nav-link-padding" href="cabanas.html">Cabaña</a>
+                    <a class="nav-link nav-link-padding" href="cabanas.html">Cabañas</a>
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="cabanas.html"></a>
                     <!--SUBMENU-->
                     <ul class="dropdown-menu">
@@ -80,17 +80,19 @@
         </div>
     <div class="nosotros flex-row">
         <div class="description">
-            <p>Somos una empresa familiar, estamos ubicados en la ciudad de Oberá en Misiones, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores libero sequi, dolorem consectetur cum ipsa, odio error quam temporibus qui architecto, tempore cumque nemo consequatur harum id illum dolor earum.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores eligendi animi corrupti distinctio eveniet iste? Cumque iste dolor recusandae quis quaerat ipsa, impedit quos voluptatibus assumenda, consectetur voluptatem doloremque animi?</p>
+            <p>Somos una empresa familiar, estamos ubicados en la ciudad de Oberá en Misiones. Comenzamos hace 10 años con el sueño dar a conocer un poquito más de nuestra provincia a quienes nos visitan al mismo tiempo que les ofrecemos el mejor servicio. </p>
         </div>
         <img src="../media/portada1.jpg" alt="">  
     </div>
 
      <!--Seccion Servicios------------------------------------------------------------------------------------>
-    <section class="servicioSection">
-        <!--title-->
-        <div class="subtitulo">
-            <h2>Servicios</h2>
+    <section class="servicioSection row">
+
+        <div>
+            <h2 class="subtitulo">Servicios</h2>
         </div>
+        <!--title
+        
         <ul class="serviciosList flex-row listNoViñeta">
             <li> <i class="fas fa-swimmer"></i> <p>Piscina</p></li>
             <li> <img src="../media/iconoParrilla.png" alt="" class="i-img"><p>Quincho con parrilla</p></li>
@@ -103,7 +105,149 @@
             <li> <img src="../media/iconoSabana.png" alt="" class="i-img"><p>Ropa de cama</p></li>
             <li> <i class="fas fa-temperature-high"></i> <p>Aire Acondicionado</p></li>
             <li> <img src="../media/iconoCocina.png" alt="" class="i-img"><p>Cocina completa</p></li>
-        </ul>
+        </ul>-->
+    
+        <!--acordeon 1-->
+        <div class="accordion  col-lg-6" id="acordion1">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                        <i class="fas fa-swimmer"></i> <p>Piscina</p>
+                    </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#acordion1">
+                    <div class="accordion-body">
+                        Contamos con solarium para que disfrutes del verano. 
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        <img src="../media/iconoParrilla.png" alt="" class="i-img"><p>Quincho con parrilla</p>
+                    </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#acordion1">
+                    <div class="accordion-body">
+                        El predio cuenta con un quincho grande y varias parrillas distribuidas por el predio.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        <i class="fab fa-pagelines"></i> <p>Espacio Verde</p>
+                    </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#acordion1">
+                    <div class="accordion-body">
+                        Contamos con un patio muy grande, con diferentes especies árboreas nativas.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                        <i class="fas fa-futbol"></i> <p>Recreación</p>
+                    </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#acordion1">
+                    <div class="accordion-body">
+                        Contamos con una cancha de futbol, también con metegol y pinpong para que te puedas divertir.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                        <img src="../media/iconoParque.png" alt="" class="i-img"><p>Parque de juegos para niños</p>
+                    </button>
+                </h2>
+                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#acordion1">
+                    <div class="accordion-body">
+                        También para los más pequeños contamos con un espacio especial con hamacas, tobogán y sube y bajas 
+                    </div>
+                </div>
+            </div>
+
+          </div>
+
+        <!--acordeon 2-->
+        <div class="accordion col-lg-6" id="acordion2">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading6">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="fales" aria-controls="collapse6">
+                        <i class="fas fa-car"></i> <p>Cochera</p>
+                    </button>
+                </h2>
+                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#acordion2">
+                    <div class="accordion-body">
+                        Podrás dejar tu auto en un lugar seguro al aire libre.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading7">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                        <img src="../media/iconoSabana.png" alt="" class="i-img"><p>Ropa de cama</p>
+                    </button>
+                </h2>
+                <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#acordion2">
+                    <div class="accordion-body">
+                        Proveemos sábanas y toallas durante toda tu estadía.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading8">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                        <i class="fas fa-wifi"></i> <p>Wi-fi</p>
+                    </button>
+                </h2>
+                <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#acordion2">
+                    <div class="accordion-body">
+                        Contamos con servicio de wifi en todo el predio. Y servicio Directv en cada cabaña.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading9">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                        <i class="fas fa-temperature-high"></i> <p>Aire Acondicionado</p>
+                    </button>
+                </h2>
+                <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#acordion2">
+                    <div class="accordion-body">
+                        Todas las cabañas cuentan con aire acondicionado frio-calor.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading10">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                        <img src="../media/iconoCocina.png" alt="" class="i-img"><p>Cocina completa</p>
+                    </button>
+                </h2>
+                <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#acordion2">
+                    <div class="accordion-body">
+                        Cada cabaña tiene su cocina con todos los elementos necesarios.
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+
     </section>
     
     <!--Pie de pagina------------------------------------------------------------------------------------>
@@ -118,6 +262,17 @@
             <a href="https://www.facebook.com/delaselva2013" target="_blank"><i class="fab fa-facebook-square facebook"></i></a>
             <a href="https://www.instagram.com/cabanas_de_la_selva/" target="_blank"><i class="fab fa-instagram-square instagram"></i></a>
             <a href="https://api.whatsapp.com/send/?phone=%2B5493755430811&text&app_absent=0" target="_blank"><i class="fab fa-whatsapp-square whatsapp"></i></a>
+        </div>
+
+        <div class="mapaSitio">
+            <ul class="listNoViñeta"> 
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="cabanas.html">Cabañas</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
         </div>
     </footer>
 

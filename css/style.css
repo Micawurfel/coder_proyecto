@@ -7,7 +7,8 @@
   margin: 0;
   padding: 0;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  border: gold solid 1px; }
 
 a {
   color: currentColor;
@@ -118,6 +119,15 @@ body.error {
     justify-self: center; }
   .cabañaBox .linksCabañas {
     text-align: center; }
+    .cabañaBox .linksCabañas button {
+      padding: 8px;
+      background-color: #579022;
+      border: #579022 solid 2px;
+      border-radius: 10px;
+      margin: 8px 0; }
+      .cabañaBox .linksCabañas button:hover {
+        background-color: #87bd13;
+        border: #87bd13 solid 2px; }
     .cabañaBox .linksCabañas a {
       color: #193625;
       text-decoration: none; }
@@ -135,41 +145,18 @@ body.error {
     width: 400px;
     height: 250px; }
 
-.servicioSection h2 {
-  text-align: center;
-  color: #193625;
-  font-size: 1.5rem;
-  font-weight: 500;
-  position: relative; }
-
-.servicioSection h2::after, .servicioSection h2::before {
-  content: '';
-  background-color: currentColor;
-  height: 3px;
-  width: 120px;
-  position: absolute;
-  top: 0.5em; }
-
-.servicioSection h2::before {
-  left: -130px; }
-
-.servicioSection h2::after {
-  right: -130px; }
-
-/*estilos de LISTA DE SERVICIOS*/
-.serviciosList {
-  margin: 50px; }
-  .serviciosList i {
-    margin-right: 4px; }
-
-.serviciosList li {
-  margin: 22px 44px;
-  text-align: center; }
-
-.i-img {
-  width: 30px;
-  height: 30px;
-  margin-right: 8px; }
+.servicioSection {
+  margin: 2rem 10%; }
+  .servicioSection .subtitulo {
+    text-align: center;
+    color: #193625;
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative; }
+  .servicioSection .i-img, .servicioSection i {
+    width: 30px;
+    height: 30px;
+    margin-right: 16px; }
 
 /*estilos PAGINA BLOG*/
 .blogSection {
@@ -251,9 +238,7 @@ body.error {
       margin: auto;
       text-align: center; }
       .cabañaBox .linksCabañas li {
-        padding: 8px 0px; }
-  .barraLateral {
-    display: block; } }
+        padding: 8px 0px; } }
 
 /*  index   */
 /*colores*/
@@ -547,6 +532,11 @@ footer {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center; }
+  footer .mapaSitio {
+    width: 100%;
+    text-align: center; }
+    footer .mapaSitio a:hover {
+      color: gray; }
   footer a {
     padding-right: 8px;
     text-decoration: none;
@@ -577,12 +567,12 @@ footer {
 /* MEDIA QUERY DESKTOP */
 @media only screen and (min-width: 768px) {
   footer, .footerIndex {
-    padding-bottom: 40px;
+    padding-bottom: 16px;
     flex-flow: row nowrap;
-    align-items: flex-end;
-    justify-content: space-evenly; }
-  .footerIndex .contacto, .footerIndex .redes, .footerIndex .formulario {
-    width: 30%; }
+    align-items: center;
+    justify-content: space-around; }
+  .footerIndex .contacto, .footerIndex .redes, .footerIndex .formulario, .footerIndex .mapaSitio {
+    width: 25%; }
   .footerIndex .formulario {
     justify-content: flex-start; }
   .footerIndex .form-group {
@@ -706,6 +696,11 @@ footer {
   align-self: flex-end;
   justify-self: center; }
 
+/* cabañas */
+.contactoSection {
+  align-items: flex-start;
+  justify-content: space-evenly; }
+
 /* MEDIA QUERY DESKTOP */
 @media only screen and (min-width: 768px) {
   .cabañaBox .cartasBox {
@@ -717,9 +712,13 @@ footer {
 /*colores*/
 /*medidas*/
 /*mixin*/
-.formContact {
-  margin: 24px 16px;
-  text-align: center; }
+.contactoSection {
+  margin: 16px 0px; }
+
+.formContact, .redesContact {
+  text-align: center;
+  width: 90%;
+  margin: 16px 0px; }
 
 form .button {
   background-color: #579022;
@@ -730,9 +729,20 @@ form .button {
 
 /* MEDIA QUERY DESKTOP */
 @media only screen and (min-width: 768px) {
-  .formContact {
+  .contactoSection {
+    margin: 16px auto; }
+  .formContact, .redesContact {
     border-radius: 10px;
     box-shadow: 2px 2px 5px #999;
     padding: 24px;
-    width: 30%;
-    margin: 24px auto; } }
+    width: 35%; }
+  .redesContact {
+    margin-top: 50px;
+    background-color: #579022;
+    color: white; }
+    .redesContact i {
+      font-size: 32px;
+      color: #579022;
+      background-color: white;
+      margin: 0px;
+      padding: -5px; } }

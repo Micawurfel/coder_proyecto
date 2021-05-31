@@ -49,7 +49,7 @@
                 <li class="nav-item"><a href="galeria.html" class="nav-link">Galeria</a></li>
 
                 <li class="nav-item dropdown"> 
-                    <a class="nav-link nav-link-padding" href="cabanas.html">Cabaña</a>
+                    <a class="nav-link nav-link-padding" href="cabanas.html">Cabañas</a>
                     <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="cabanas.html"></a>
                     <!--SUBMENU-->
                     <ul class="dropdown-menu">
@@ -75,41 +75,52 @@
     </div>
 
     <div class="description">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, enim fugiat cumque iure hic reiciendis esse doloremque facilis atque sit ias aperiam asperiores expedita? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit saepe ea iste voluptatem adipisci consectetur repudiandae at architecarum ut. Non, quasi nemo.</p>
+        <p>Todavía no contamos con una sección de reservas automática, pero si deseas reservar o despejar dudas completa el formulario y nos pondermos en contacto con vos</p>
     </div>
 
     <!--Formulario de contacto-->
-    <form action="" class="formContact">
-        <div class="input-group mb-3">
-            <label class="form-label" for="nombre">Nombre:  </label>
-            <input class="form-control" type="text" name="nombre" id="nombre" required>
-        </div> 
+    <section class="contactoSection flex-row container">
 
-        <div class="input-group mb-3">
-            <label class="form-label" for="correo">Correo Electronico:  </label>
-            <input class="form-control" type="email" name="correo" id="correo" required>
+        <form action="" class="formContact">
+            <div class="input-group mb-3">
+                <label class="form-label" for="nombre">Nombre:  </label>
+                <input class="form-control" type="text" name="nombre" id="nombre" required>
+            </div> 
+
+            <div class="input-group mb-3">
+                <label class="form-label" for="correo">Correo Electronico:  </label>
+                <input class="form-control" type="email" name="correo" id="correo" required>
+            </div>
+
+            <div class="input-group mb-3">
+                <label class="form-label" for="celular">Número de Telefono:  </label>
+                <input class="form-control" type="tel" name="celular" id="celular" required pattern="[0-9]{8}">
+            </div>
+
+            <div class="input-group mb-3">
+                <label class="form-label" for="asunto">Asunto:  </label>
+                <input class="form-control" type="text" name="asunt" id="asunto" required>
+            </div> 
+
+            <div class="input-group mb-3">
+                <label class="form-label" for="consulta">Mensaje:  </label>
+                <textarea class="form-control" name="consulta" id="consulta" cols="30" rows="10" placeholder="Escribinos tu consulta" required></textarea>
+            </div>
+
+            <div mb-3>
+                <input type="submit" class="btn button">
+                <input type="reset" class="btn button">
+            </div>
+        </form>
+
+        <div class="redesContact">
+            <p> Ahora también podes contactanos a través de nuestras redes sociales:</p>
+            <a href="https://www.facebook.com/delaselva2013" target="_blank"><i class="fab fa-facebook-square facebook"></i></a>
+            <a href="https://www.instagram.com/cabanas_de_la_selva/" target="_blank"><i class="fab fa-instagram-square instagram"></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=%2B5493755430811&text&app_absent=0" target="_blank"><i class="fab fa-whatsapp-square whatsapp"></i></a>
         </div>
 
-        <div class="input-group mb-3">
-            <label class="form-label" for="celular">Número de Telefono:  </label>
-            <input class="form-control" type="tel" name="celular" id="celular" required pattern="[0-9]{8}">
-        </div>
-
-        <div class="input-group mb-3">
-            <label class="form-label" for="asunto">Asunto:  </label>
-            <input class="form-control" type="text" name="asunt" id="asunto" required>
-        </div> 
-
-         <div class="input-group mb-3">
-             <label class="form-label" for="consulta">Mensaje:  </label>
-            <textarea class="form-control" name="consulta" id="consulta" cols="30" rows="10" placeholder="Escribinos tu consulta" required></textarea>
-         </div>
-
-         <div mb-3>
-            <input type="submit" class="btn button">
-            <input type="reset" class="btn button">
-         </div>
-    </form>
+    </section>
     <!--Pie de pagina------------------------------------------------------------------------------------>
     <footer>
         <div class="contacto">
@@ -122,6 +133,17 @@
             <a href="https://www.facebook.com/delaselva2013" target="_blank"><i class="fab fa-facebook-square facebook"></i></a>
             <a href="https://www.instagram.com/cabanas_de_la_selva/" target="_blank"><i class="fab fa-instagram-square instagram"></i></a>
             <a href="https://api.whatsapp.com/send/?phone=%2B5493755430811&text&app_absent=0" target="_blank"><i class="fab fa-whatsapp-square whatsapp"></i></a>
+        </div>
+
+        <div class="mapaSitio">
+            <ul class="listNoViñeta"> 
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="cabanas.html">Cabañas</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
         </div>
     </footer>
 

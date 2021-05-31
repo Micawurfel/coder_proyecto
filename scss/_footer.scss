@@ -44,6 +44,14 @@ footer{
         flex-flow: row nowrap;
         justify-content: center;
     }
+    .mapaSitio{
+        width: 100%;
+        text-align: center;
+        a:hover{
+            color: gray;
+        }
+        
+    }
     a{
         padding-right: 8px;
         text-decoration: none;
@@ -84,15 +92,14 @@ footer{
                     /* MEDIA QUERY DESKTOP */   
 @media only screen and (min-width: $desktop) {
     footer, .footerIndex{
-        padding-bottom: 40px;
+        padding-bottom: 16px;
         flex-flow: row nowrap;
-        align-items: flex-end;
-        justify-content: space-evenly;
+        align-items: center;
+        justify-content: space-around;
     }
     .footerIndex{
-        
-        .contacto, .redes, .formulario{
-            width: 30%;
+        .contacto, .redes, .formulario, .mapaSitio{
+            width: 25%;
         }
         .formulario{
             justify-content: flex-start;

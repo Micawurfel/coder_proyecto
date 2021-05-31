@@ -5,6 +5,7 @@
     padding: 0;
     font-family: $font1, Arial, Helvetica, sans-serif;
     font-weight: 400;
+    border: gold solid 1px;
 }
 a{
     color: currentColor;
@@ -137,6 +138,18 @@ body.error{
     }
     .linksCabañas{
         text-align: center;
+        
+        button{
+            padding: 8px;
+            background-color: $boton;
+            border: $boton solid 2px;
+            border-radius: 10px;
+            margin: 8px 0;
+            &:hover{
+                background-color: $boton-hover;
+                border: $boton-hover solid 2px;
+            }
+        }
         a{
             color: $verdeOscuro;
             text-decoration: none;
@@ -160,51 +173,20 @@ body.error{
     }
 }
 .servicioSection{
-    h2{
+    margin: 2rem 10%;
+    .subtitulo{
         text-align: center;
         color: $verdeOscuro;
         font-size: 1.5rem;
         font-weight: 500;
         position: relative;
     }
-
-    h2::after, h2::before {
-        content: '';
-        background-color: currentColor;
-        height: 3px;
-        width: 120px;
-        position: absolute;
-        top: 0.5em; 
+    .i-img, i{
+        width: 30px;
+        height: 30px; 
+        margin-right: 16px;   
         }
-        
-    h2::before {
-        left: -130px; 
-        }
-        
-    h2::after {
-        right: -130px; 
-    }
 }
-
-/*estilos de LISTA DE SERVICIOS*/
-.serviciosList{
-    margin: 50px;
-    i{
-        margin-right: 4px;
-    }
-}
-.serviciosList li{
-    margin: 22px 44px;
-    text-align: center;     
-}
-.i-img{
-    width: 30px;
-    height: 30px; 
-    margin-right: 8px;   
-    }
-
-
-
 
  /*estilos PAGINA BLOG*/
 .blogSection{
@@ -313,7 +295,5 @@ body.error{
         }
     }
 }
-.barraLateral{
-    display: block;
-}
+
 }

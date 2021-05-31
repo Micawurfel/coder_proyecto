@@ -1,8 +1,13 @@
 @import "variables";
 
-.formContact{
-    margin: 24px 16px;
+.contactoSection{
+    margin: 16px 0px;
+}
+
+.formContact, .redesContact{
     text-align: center;
+    width: 90%;
+    margin: 16px 0px;
 }
 form .button{
     background-color: $boton;
@@ -15,11 +20,26 @@ form .button{
 
 /* MEDIA QUERY DESKTOP */   
 @media only screen and (min-width: $desktop) {
-    .formContact{
+    .contactoSection{
+        margin: 16px auto;
+    }
+    .formContact, .redesContact{
         border-radius: 10px;
         box-shadow: $sombra;
         padding: 24px;
-        width: 30%;
-        margin: 24px auto;
+        width: 35%;
+    }
+    .redesContact{
+        margin-top: 50px;
+        background-color: $verdeClaro;
+        color: $txtLight;
+        i{
+            font-size: 32px;
+            color: $verdeClaro;
+            background-color: white;
+            margin: 0px;
+            padding: -5px;
+        }
     }
 }
+
