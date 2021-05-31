@@ -299,6 +299,8 @@ body.error {
 
 .tarjetas {
   margin-bottom: 24px; }
+  .tarjetas img {
+    max-height: 200px; }
 
 .borde {
   border-radius: 8px;
@@ -365,6 +367,7 @@ body.error {
 
 .galeriaIndex img {
   min-width: 40%;
+  max-height: 400px;
   flex-basis: 10%;
   flex-grow: 1;
   flex-shrink: 0;
@@ -740,8 +743,7 @@ form .button {
     background-color: #579022;
     color: white; }
     .redesContact i {
-      font-size: 32px;
-      color: #579022;
-      background-color: white;
+      font-size: 38px;
+      color: white;
       margin: 0px;
       padding: -5px; } }
