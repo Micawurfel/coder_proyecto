@@ -366,8 +366,8 @@ body.error {
   justify-content: stretch; }
 
 .galeriaIndex img {
-  min-width: 40%;
-  max-height: 400px;
+  width: 50%;
+  height: 200px;
   flex-basis: 10%;
   flex-grow: 1;
   flex-shrink: 0;
